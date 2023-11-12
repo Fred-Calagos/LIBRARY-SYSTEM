@@ -1,0 +1,296 @@
+
+				/* ---------------------------------------- */
+				/*      FOR SEARCH BAR AND ADD BUTTON	    */
+				/* ---------------------------------------- */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+  }
+  
+  li {
+	float: left;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  li button{
+	border: none;
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+  }
+  li button:hover{
+	background-color: #111;
+	cursor: pointer;
+}
+  li a:hover:not(.active),button:hover:not(.active){
+	background-color: #111;
+  }
+  li input{
+	outline: none;
+	background-color: rgb(250, 244, 244);
+	border: none;
+	padding:14px 20px 17px 20px;
+  }
+  
+  .active {
+	background-color: #04AA6D;
+  }
+
+				/* ---------------------------------------- */
+				/*    MODAL CONTAINER FOR ADMIN-PROFILE     */
+				/* ---------------------------------------- */
+					/* ---------------------------------------- */
+					/*        MODAL CONTAINER for EDIT          */
+					/* ---------------------------------------- */
+
+.modal-container-edit{														
+	background-color: rgba(0,0,255,0.5);
+	display:flex;
+	align-items:center;
+	position:fixed;
+	opacity:0;
+	pointer-events:none;		
+	width:100vw;
+	height:100vh;
+	top:0;
+	left:0;
+}
+.modal-container-edit.show{
+	pointer-events:auto;
+	opacity:1;
+	transition:0.7;
+}
+.modal-content-edit{
+	background: linear-gradient(to top left, #0000a5 10%, #2d82b5 100%);
+	padding:30px;
+	border-radius:5px;
+	position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	max-width:100%;
+	box-shadow:0 2px 4px rgba(0,0,0,0.3);
+	color:white;
+}
+.edit-table_update{
+	padding:10px;
+	font-size:20px;
+	font-family:"Lucida Console";
+	text-align:center;
+}
+.modal-content-edit form label{
+	width:150px;
+	display:inline-block;
+}
+#close-edit{
+	background:#48d1cc;
+	border:none;
+	border-radius:5px;
+	padding: 5px;
+	font-size:15px;
+	cursor:pointer;
+}
+#update-edit{
+	background:#48d1cc;
+	border:none;
+	border-radius:5px;
+	padding: 5px;
+	font-size:15px;
+	cursor:pointer;
+	float:right;
+}
+
+
+			/* ---------------------------------------- */
+			/*      THIS IS FOR THE MODAL ADD BOOK      */
+			/* ---------------------------------------- */
+
+
+.modal-container-book{
+	background-color: rgba(0,0,255,0.5);
+	display:flex;
+	align-items:center;
+	position:fixed;
+	opacity:0;
+	pointer-events:none;
+	width:100vw;
+	height:100vh;
+	top:0;
+	left:0;
+}
+
+#modal_container_book.show{
+	pointer-events:auto;
+	opacity:1;
+	transition:0.7;
+}
+.modal-content-book{
+	background: linear-gradient(to top left, #0000a5 50%, #2d82b5 80%);
+	padding:30px;
+	border-radius:5px;
+	position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	max-width:100%;
+	box-shadow:0 2px 4px rgba(0,0,0,0.3);
+	color:white;
+}
+.form-books .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin:0;
+    justify-content: space-evenly;
+  }
+
+.form-books .container1{
+    padding:10px;
+    display:inline-block;
+    width: 50%;
+}
+.form-books .container2{
+    padding:10px;
+    width: 50%;
+}
+.book_table_add{
+	padding:10px;
+	font-size:20px;
+	font-family:"Lucida Console";
+	text-align:center;
+}
+.modal-content-book form label{
+	width:150px;
+	display:inline-block;
+}
+#c-add-book{
+	background:#48d1cc;
+	border:none;
+	border-radius:5px;
+	padding: 5px;
+	font-size:15px;
+	cursor:pointer;
+}
+#btn-add{
+	background:#48d1cc;
+	border:none;
+	border-radius:5px;
+	padding: 5px;
+	font-size:15px;
+	cursor:pointer;
+	float:right;
+}
+
+
+				/* ---------------------------------------- */
+				/*   this is for the modal UPDATE BOOKS     */
+				/* ---------------------------------------- */
+
+.form-books-update{
+	margin: 10px 10px 0px 0px;
+	background-color: #0000a5;
+}
+.form-books-update .flex-container-update {
+    display: flex;
+    flex-wrap: nowrap;
+    margin:0;
+    justify-content: space-evenly;
+
+  }
+
+.form-books-update .container1-update{
+    padding:10px;
+    display:inline-block;
+    width: 50%;
+}
+.form-books-update .container2-update{
+    padding:10px;
+    width: 50%;
+}
+.form-books-update h2{
+	padding:10px;
+	font-size:20px;
+	font-family:"Lucida Console";
+	text-align:center;
+	color: white;
+}
+.form-books-update label{
+	width:200px;
+	display:inline-block;
+	color: white;
+}
+.form-books-update input[type=text],input[type=date]{
+	outline: none;
+	border: none;
+	padding: 10px;
+	width: 50%;
+}
+#btn-edit{
+	background:#48d1cc;
+	border:none;
+	border-radius:5px;
+	padding: 5px;
+	font-size:15px;
+	cursor:pointer;
+	float:right;
+}
+
+
+				/* ---------------------------------------- */
+				/*           BOOKS TABLE DESIGN             */
+				/* ---------------------------------------- */
+
+
+#dtBasicExample{
+	border: 2px solid rgb(5, 18, 94);
+	border-collapse: collapse;
+	width: 90%;
+	margin: auto;
+}
+#dtBasicExample th{
+	background-color: #000000;
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	padding: 10px;
+	border-bottom: 2px solid rgb(150, 120, 120) ;
+	border-left: 2px solid rgb(33, 27, 27) ;
+}
+#dtBasicExample td{
+	padding: 10px;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	border-bottom: thin solid rgb(0, 0, 0) ;
+}
+#dtBasicExample tr:nth-child(odd) td{
+	background-color: #221616;
+}
+#dtBasicExample tr:nth-child(even) td{
+	background-color: #000000;
+}
+#dtBasicExample td a{
+	text-decoration: none;
+	background-color: #0000a5;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+#edit-book-modal{
+	background-color: #0000a5;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
